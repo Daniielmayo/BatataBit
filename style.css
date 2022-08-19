@@ -412,11 +412,12 @@ main{
 }
 .plans-container--slider{
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    gap: -10px;
     height: 316px;
     overflow-x: scroll;
-    overscroll-behavior-x: contain;
-    scroll-snap-type:x proximity;
+    overscroll-behavior-y: contain;
+    scroll-snap-type:y proximity;
 }
 
 .plans-container--card{
