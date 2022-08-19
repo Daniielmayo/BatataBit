@@ -422,7 +422,7 @@ main{
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
-.recomendado{
+.categoria{
     position: absolute;
     width: 120px;
     height: 31px;
@@ -430,10 +430,28 @@ main{
     top: -15px;
     left: calc(50% - 60px);
     font-size: 1.2rem;
-    background-color: var(--bitcoin--orange);
     border-radius: 8px;
     color: var(--just-white);
 }
+.recomendado{
+    background-color: var(--bitcoin--orange);
+}
+.basic{
+    background-color: var(--secundary-blue);
+}
+.ilimitado{
+    background-color: var(--grey);
+    border: 2px solid var(--bitcoin--orange);
+    font-weight: bold;
+
+}
+.ilimitado-container{
+    background-color: var(--warm-black);
+    border: 2px solid var(--bitcoin--orange);
+    color: #e7f5ff;
+
+}
+
 .plan-info--title{
     padding-top: 30px;
     font-size: 1.4rem;
@@ -441,12 +459,19 @@ main{
     line-height: 1.8rem;
     color: black;
 }
+.ilimitado-title{
+    color: #f1f1f1;
+}
+
 .plan-info--price{
     padding: 5px 0;
     font-size: 5.2rem;
     font-weight: bold;
     line-height: 5.3rem;
     color: black;
+}
+.ilimitado-price{
+    color: #f1f1f1;
 }
 .plan-info--price span{
     font-size: 1.2rem;
