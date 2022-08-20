@@ -145,15 +145,22 @@ main{
     line-height: 1.6rem;
     color: #757575;
 }
-
+.main-tables-container{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type:x proximity;
+    
+}
 .main-currency-table{
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height:360px;
     margin:0 auto;
- 
     font-family: "Inter", sans-serif;
+    scroll-snap-align: center;
+    
 }
 
 .main-currency-table .currency-table--title{
@@ -164,6 +171,10 @@ main{
     color: var(--bitcoin--orange)
 }
 
+.main-currency-table .title-comisiones{
+    color: var(--secundary-blue);    
+   
+}
 .currency-table--container{
     width: 90%;
     min-width: 230px;
@@ -234,6 +245,7 @@ main{
     background-repeat: no-repeat;
 
 }
+
 .currency-table--date{
     width: 190px;
     height: 30px;
@@ -242,6 +254,9 @@ main{
     padding: 8px;
     background-color: var(--soft-orange);
     border-radius: 8px;
+}
+.main-currency-table .date-comisiones{
+    background-color: var(--soft-blue);
 }
 .currency-table--date p{
    
@@ -470,6 +485,10 @@ main{
     color: black;
 }
 .ilimitado-title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.5rem;
     color: #f1f1f1;
 }
 
@@ -481,6 +500,10 @@ main{
     color: black;
 }
 .ilimitado-price{
+    padding: 5px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
     color: #f1f1f1;
 }
 .plan-info--price span{
